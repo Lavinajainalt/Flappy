@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flappy Bird - Friendly Version</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      background-color: #87CEEB;
+    }
+    #gameCanvas {
+      display: block;
+      margin: 0 auto;
+      background-image: url("https://th.bing.com/th/id/OIP.QGS1uBxFVbu7qVPi6n42lAAAAA?w=442&h=591&rs=1&pid=ImgDetMain");
+      background-size: cover;
+      background-position: center;
+
+  
+      border: 3px solid #008B8B;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    #gameMessage {
+      text-align: center;
+      font-size: 24px;
+      color: #333;
+      margin-top: 20px;
+    }
+    #restartButton {
+      display: none;
+      margin: 20px auto;
+      padding: 10px 30px;
+      font-size: 18px;
+      color: white;
+      background-color: #FF4500;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    #restartButton:hover {
+      background-color: #FF6347;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="gameCanvas" width="480" height="640"></canvas>
+  <div id="gameMessage">Press any key or tap to start flapping!</div>
+  <button id="restartButton">Restart Game</button>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="flappybird.js"></script>
+</body>
+</html>
